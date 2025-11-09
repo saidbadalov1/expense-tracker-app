@@ -1,0 +1,57 @@
+export const ColorTheme = {
+  palette: {
+    blue: {
+      50: "#E7F9FD",
+      100: "#88E1F7",
+      200: "#58D5F3",
+      300: "#28C9F0",
+      400: "#0FAFD7",
+      500: "#0D98BA",
+      600: "#0A758F",
+      700: "#086177",
+      800: "#042F39",
+      900: "#031F26",
+    },
+    gray: {
+      50: "#F5F7FA",
+      100: "#E3E7EB",
+      200: "#C9D2DA",
+      300: "#97A5B2",
+      400: "#788795",
+      500: "#5E6F7D",
+      600: "#4E616E",
+      700: "#3A4D5A",
+      800: "#27343F",
+      900: "#141D24",
+    },
+    primary: {
+      main: "#0D98BA",
+      light: "#28C9F0",
+      dark: "#086177",
+      contrastText: "#FFFFFF",
+      black: "#000000",
+      white: "#FFFFFF",
+    },
+    secondary: {
+      main: "#2BAC47",
+      light: "#4FD26B",
+      dark: "#1F7E32",
+      contrastText: "#FFFFFF",
+      green: "#2BAC47",
+      greenAlpha: "rgba(43, 172, 71, 0.10)",
+      red: "#C83532",
+      redAlpha: "rgba(200, 53, 50, 0.10)",
+      orange: "#EF8943",
+      orangeAlpha: "rgba(239, 137, 67, 0.10)",
+    },
+    error: {
+      main: "#C83532",
+    },
+    warning: {
+      main: "#EF8943",
+    },
+    success: {
+      main: "#2BAC47",
+    },
+  },
+};
