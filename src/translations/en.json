@@ -1,0 +1,26 @@
+{
+  "overview": "Overview",
+  "budgets": "Budgets",
+  "goals": "Goals",
+  "reports": "Reports",
+  "closeMenu": "Close menu",
+  "language": {
+    "switcherLabel": "Change language",
+    "menuTitle": "Language",
+    "menuSubtitle": "Choose your preferred language",
+    "options": {
+      "en": "English",
+      "az": "Azerbaijani"
+    }
+  },
+  "notifications": {
+    "menuTitle": "Notifications",
+    "empty": "You're all caught up! No notifications right now.",
+    "viewAll": "View all"
+  },
+  "user": {
+    "name": "User",
+    "guest": "Guest",
+    "signInMessage": "Sign in to personalize your experience"
+  }
+}
