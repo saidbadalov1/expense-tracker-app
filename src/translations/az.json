@@ -1,0 +1,26 @@
+{
+  "overview": "Əsas səhifə",
+  "budgets": "Büdcələr",
+  "goals": "Məqsədlər",
+  "reports": "Hesabatlar",
+  "closeMenu": "Menyunu bağla",
+  "language": {
+    "switcherLabel": "Dili dəyiş",
+    "menuTitle": "Dil",
+    "menuSubtitle": "Tercih etdiyiniz dili seçin",
+    "options": {
+      "en": "İngilis",
+      "az": "Azərbaycan"
+    }
+  },
+  "notifications": {
+    "menuTitle": "Bildirişlər",
+    "empty": "Bildirişləriniz yoxdur",
+    "viewAll": "Hamısını gör"
+  },
+  "user": {
+    "name": "İstifadəçi",
+    "guest": "Qonaq",
+    "signInMessage": "Giriş etmək üçün hesabınızı yaratın"
+  }
+}
