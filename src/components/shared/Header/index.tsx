@@ -18,7 +18,7 @@ const Header = () => {
   };
 
   return (
-    <HeaderBar elevation={0} position="static">
+    <HeaderBar elevation={0} position="sticky">
       <HeaderToolbar disableGutters className="container">
         <BrandSection />
         <NavLinks activePath={location.pathname} />

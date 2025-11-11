@@ -42,7 +42,6 @@ const LanguageMenu = ({ placement }: LanguageMenuProps) => {
 
   const handleChangeLanguage = (language: LANGUAGE_CODE) => {
     i18n.changeLanguage(language);
-    localStorage.setItem("language", language);
     handleClose();
   };
 

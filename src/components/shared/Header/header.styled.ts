@@ -64,21 +64,21 @@ export const NavContainer = styled(Stack)(({ theme }) => ({
   },
 }));
 
-export const NavButton = styled(Button)<{ active?: boolean }>(
-  ({ theme, active }) => ({
-    padding: theme.spacing(1, 1.5),
-    borderRadius: theme.shape.borderRadius,
-    textTransform: "none",
-    fontWeight: 500,
-    color: active ? theme.palette.primary.main : theme.palette.text.secondary,
-    backgroundColor: active ? theme.palette.primary.main + "14" : "transparent",
-    "&:hover": {
-      backgroundColor: active
-        ? theme.palette.primary.main + "1F"
-        : theme.palette.action.hover,
-    },
-  })
-);
+export const NavButton = styled(Button, {
+  shouldForwardProp: (prop) => prop !== "active",
+})<{ active?: boolean }>(({ theme, active }) => ({
+  padding: theme.spacing(1, 1.5),
+  borderRadius: theme.shape.borderRadius,
+  textTransform: "none",
+  fontWeight: 500,
+  color: active ? theme.palette.primary.main : theme.palette.text.secondary,
+  backgroundColor: active ? theme.palette.primary.main + "14" : "transparent",
+  "&:hover": {
+    backgroundColor: active
+      ? theme.palette.primary.main + "1F"
+      : theme.palette.action.hover,
+  },
+}));
 
 export const StyledLink = styled(RouterLink)(() => ({
   textDecoration: "none",
@@ -167,18 +167,18 @@ export const MobileNavList = styled(List)(({ theme }) => ({
   gap: theme.spacing(1),
 }));
 
-export const MobileNavButton = styled(ListItemButton)<{ active?: boolean }>(
-  ({ theme, active }) => ({
-    borderRadius: theme.shape.borderRadius,
-    color: active ? theme.palette.primary.main : theme.palette.text.primary,
-    backgroundColor: active ? theme.palette.primary.main + "14" : "transparent",
-    "&:hover": {
-      backgroundColor: active
-        ? theme.palette.primary.main + "1F"
-        : theme.palette.action.hover,
-    },
-  })
-);
+export const MobileNavButton = styled(ListItemButton, {
+  shouldForwardProp: (prop) => prop !== "active",
+})<{ active?: boolean }>(({ theme, active }) => ({
+  borderRadius: theme.shape.borderRadius,
+  color: active ? theme.palette.primary.main : theme.palette.text.primary,
+  backgroundColor: active ? theme.palette.primary.main + "14" : "transparent",
+  "&:hover": {
+    backgroundColor: active
+      ? theme.palette.primary.main + "1F"
+      : theme.palette.action.hover,
+  },
+}));
 
 export const MobileSection = styled(Stack)(({ theme }) => ({
   gap: theme.spacing(1.5),

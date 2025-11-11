@@ -22,5 +22,69 @@
     "name": "İstifadəçi",
     "guest": "Qonaq",
     "signInMessage": "Giriş etmək üçün hesabınızı yaratın"
+  },
+  "home": {
+    "title": "Xərclər izləyicisi",
+    "subtitle": "Hər gəlir və xərci qeyd edərək maliyyənizə nəzarət edin.",
+    "form": {
+      "titleCreate": "Yeni qeyd əlavə edin",
+      "titleEdit": "Qeydi yeniləyin",
+      "fields": {
+        "title": "Başlıq",
+        "amount": "Məbləğ",
+        "category": "Kateqoriya",
+        "typeExpense": "Xərc",
+        "typeIncome": "Gəlir",
+        "date": "Tarix",
+        "notes": "Qeydlər"
+      },
+      "placeholders": {
+        "title": "məs. Market alış-verişi",
+        "notes": "İstəyə bağlı qeyd..."
+      },
+      "actions": {
+        "submit": "Qeyd əlavə et",
+        "update": "Dəyişiklikləri yadda saxla",
+        "cancel": "Ləğv et"
+      },
+      "errors": {
+        "titleRequired": "Zəhmət olmasa başlıq daxil edin.",
+        "amountPositive": "Məbləğ sıfırdan böyük olmalıdır.",
+        "categoryRequired": "Zəhmət olmasa kateqoriya seçin.",
+        "typeRequired": "Bu qeydin gəlir və ya xərc olduğunu seçin.",
+        "dateRequired": "Zəhmət olmasa düzgün tarix daxil edin.",
+        "notesTooLong": "Qeydlər {{max}} simvoldan çox olmamalıdır."
+      }
+    },
+    "categories": {
+      "housing": "Mənzil xərcləri",
+      "food": "Yemək və ərzaq",
+      "transportation": "Nəqliyyat",
+      "utilities": "Kommunal",
+      "health": "Sağlamlıq",
+      "entertainment": "Əyləncə",
+      "savings": "Yığım",
+      "other": "Digər"
+    },
+    "summary": {
+      "title": "Ümumi baxış",
+      "income": "Ümumi gəlir",
+      "expense": "Ümumi xərclər",
+      "balance": "Balans"
+    },
+    "filters": {
+      "all": "Hamısı",
+      "income": "Gəlir",
+      "expense": "Xərclər"
+    },
+    "list": {
+      "title": "Tarixçə",
+      "loading": "Xərclər yüklənir...",
+      "empty": "Hələ heç bir qeyd yoxdur. İlk xərcinizi və ya gəlirinizi yuxarıdan əlavə edin!",
+      "actions": {
+        "edit": "Qeydi redaktə et",
+        "delete": "Qeydi sil"
+      }
+    }
   }
 }

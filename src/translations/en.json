@@ -22,5 +22,69 @@
     "name": "User",
     "guest": "Guest",
     "signInMessage": "Sign in to personalize your experience"
+  },
+  "home": {
+    "title": "Expense Tracker",
+    "subtitle": "Stay on top of your money by logging every income and expense.",
+    "form": {
+      "titleCreate": "Add a new entry",
+      "titleEdit": "Update entry",
+      "fields": {
+        "title": "Title",
+        "amount": "Amount",
+        "category": "Category",
+        "typeExpense": "Expense",
+        "typeIncome": "Income",
+        "date": "Date",
+        "notes": "Notes"
+      },
+      "placeholders": {
+        "title": "e.g. Grocery shopping",
+        "notes": "Optional details..."
+      },
+      "actions": {
+        "submit": "Add entry",
+        "update": "Save changes",
+        "cancel": "Cancel"
+      },
+      "errors": {
+        "titleRequired": "Please enter a title.",
+        "amountPositive": "Amount must be greater than zero.",
+        "categoryRequired": "Please select a category.",
+        "typeRequired": "Please choose whether this is an income or an expense.",
+        "dateRequired": "Please provide a valid date.",
+        "notesTooLong": "Keep notes under {{max}} characters."
+      }
+    },
+    "categories": {
+      "housing": "Housing",
+      "food": "Food & Groceries",
+      "transportation": "Transportation",
+      "utilities": "Utilities",
+      "health": "Health & Wellness",
+      "entertainment": "Entertainment",
+      "savings": "Savings",
+      "other": "Other"
+    },
+    "summary": {
+      "title": "Overview",
+      "income": "Total income",
+      "expense": "Total expenses",
+      "balance": "Balance"
+    },
+    "filters": {
+      "all": "All",
+      "income": "Income",
+      "expense": "Expenses"
+    },
+    "list": {
+      "title": "History",
+      "loading": "Loading expenses...",
+      "empty": "No entries yet. Add your first expense or income above!",
+      "actions": {
+        "edit": "Edit entry",
+        "delete": "Delete entry"
+      }
+    }
   }
 }
