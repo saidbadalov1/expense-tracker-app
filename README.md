@@ -1,73 +1,69 @@
-# React + TypeScript + Vite
+## Features
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- 💸 Add, edit, and delete income or expense entries
+- 🔍 Filter the list by transaction type
+- 📊 At-a-glance summary of total income, expenses, and balance
+- 🌐 Internationalization (English / Azerbaijani) with language persistence
+- 💾 LocalStorage-backed mock API built with RTK Query
+- 📱 Responsive layout tailored for desktop and mobile
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Framework:** React 19 + Vite
+- **Language:** TypeScript
+- **Routing:** React Router
+- **State Management:** Redux Toolkit + RTK Query
+- **UI Library:** Material UI (MUI)
+- **Styling:** Custom theme + MUI `sx` styling
+- **Internationalization:** i18next + react-i18next
+- **Forms & Validation:** Formik + Yup
+- **Tooling:** ESLint, TypeScript strict mode
 
-## React Compiler
+## Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+# install dependencies
+npm install
 
-## Expanding the ESLint configuration
+# start the dev server
+npm run dev
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+# build for production
+npm run build
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# preview the production build
+npm run preview
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Open the app at the URL shown in your terminal (default: `http://localhost:5173`).
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Project Structure
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
+src/
+  components/
+    Home/          # Home dashboard UI
+    shared/        # Reusable components (Header, inputs, buttons, etc.)
+  hooks/           # Custom hooks
+  i18n/            # i18next configuration
+  store/           # Redux store, RTK Query services
+  translations/    # en/az translation files
+  pages/           # Routed pages
+  utils/           # Utility helpers
+```
+
+## Internationalization (i18n)
+
+Translations live under `src/translations`.  
+Language selection is handled in the header and persisted to `localStorage`, so returning users see their previous choice on load.
+
+## Contributing
+
+1. Fork the repo
+2. Create a feature branch: `git checkout -b feature/my-update`
+3. Commit changes: `git commit -m "Add my update"`
+4. Push and open a pull request
+
+## License
+
+This project is open source under the MIT License. See [`LICENSE`](LICENSE) for details.

@@ -43,7 +43,7 @@ const mapFormStateToEntry = (values: FormState, id?: string): ExpenseEntry => ({
   category: values.category,
   type: values.type,
   date: values.date,
-  notes: values.notes.trim(),
+  notes: values.notes?.trim(),
 });
 
 export const expencesApi = createApi({
